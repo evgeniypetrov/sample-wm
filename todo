@@ -1,0 +1,33 @@
+# projects messages
+[user_id] - list [project_id:type:id, project_id:type:id .. ]
+
+- routes : pushstate
+- js specs
+  mocha, sinon
+- mediator
+- js profiler: optimize js leaks
+- organize mixins in js / organize inheritance trees
+
+- auth in object [ app ]
+- inline editing
+- webmate-auth js script should be in app/or webmate-auth,
+    and configurable for scope
+
+- DSL for notifications: 
+  - publish
+      Droid Labs
+        - new comments count
+        - new discussions count
+
+  # redis
+  # key = elements not readed
+  [user_id][project_id][type] = [id,id, ...]
+  [user_id] [ project_id-type-id, project_id-type-id..]
+
+# auth system
+crud system for projects, tasks
+  - forms
+  - inline edit
+
+backbone structrure
+routers

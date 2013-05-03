@@ -1,0 +1,26 @@
+header
+  .menu.top
+    ul
+      li Menu Item 1
+      li Menu Item 1
+      li Menu Item 1
+      li Menu Item 1
+      li Menu Item 1
+
+.wrapper
+  .menu.left
+    ul
+      li Menu Item 1
+      li Menu Item 1
+      li Menu Item 1
+      li Menu Item 1
+      li Menu Item 1
+  .content
+    h1 Inside main block
+    h1 Inside main block
+    h1 Inside main block
+
+footer
+  .text 
+    copyright
+
