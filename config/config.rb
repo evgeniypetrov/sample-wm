@@ -10,6 +10,7 @@ Webmate::Application.configure do |config|
 end
 
 Webmate::Application.configure(:development) do |config|
+  config.assets.debug = true
   config.app.cache_classes = false
   config.assets.compile = true
   config.websockets.port = 3503

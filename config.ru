@@ -4,4 +4,4 @@ if configatron.assets.compile
     run Sinatra::Sprockets.environment
   end
 end
-run ExampleApp
+run Workmate

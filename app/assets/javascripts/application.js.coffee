@@ -17,7 +17,7 @@ require.config
       deps: []
       exports: "_"
     backbone:
-      deps: ["underscore"]
+      deps: ["underscore", "jquery"]
       exports: "Backbone"
     webmate:
       deps: ['backbone', 'jquery', 'underscore', 'auth', 'socketio']
@@ -40,10 +40,13 @@ define 'app', ['backbone', 'underscore', 'webmate', 'sync'], (Backbone, _, Webma
     Routers: {}
   }
 
-require ['app', 'views/app_view'], (app, MainView) ->
+require ['app', 'routers/base_router', 'views/app_view'], (app, BaseRouter, MainView) ->
   data = this.bootstrap_data
   this.App = app
   this.App.View = new MainView(data)
+
+  this.App.Router = new BaseRouter()
+  this.App.Router.start()
 
   $(document).ready( ->
     $('#container').html(window.App.View.render().el)

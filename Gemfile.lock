@@ -21,6 +21,14 @@ PATH
       thin
       yajl-ruby
 
+PATH
+  remote: /Users/malleus/projects/current/new_workmate/webmate-authentication
+  specs:
+    webmate-authentication (0.0.1)
+      bcrypt-ruby
+      warden
+      webmate
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -32,6 +40,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.4)
     backports (3.3.0)
+    bcrypt-ruby (3.0.1)
     builder (3.0.4)
     coffee-script (2.2.0)
       coffee-script-source
@@ -115,6 +124,8 @@ GEM
     thor (0.18.1)
     tilt (1.3.7)
     tzinfo (0.3.37)
+    warden (1.2.1)
+      rack (>= 1.0)
     yajl-ruby (1.1.0)
     yamler (0.1.0)
 
@@ -130,3 +141,4 @@ DEPENDENCIES
   skim
   slim
   webmate!
+  webmate-authentication!

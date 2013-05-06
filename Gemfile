@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem 'webmate', path: '/Users/malleus/projects/current/new_workmate/webmate'
+gem 'webmate-authentication', path: '/Users/malleus/projects/current/new_workmate/webmate-authentication'
 
 gem 'slim'
 gem 'rake'
